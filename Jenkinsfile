@@ -9,7 +9,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'npm install'
+        echo 'This is a minimal pipeline'
       }
     }
   }
