@@ -14,7 +14,7 @@ pipeline {
     }
     stage('Docker_stage2') {
       steps {
-        sh 'npm install'
+        sh 'sudo npm install'
       }
     }
   }
