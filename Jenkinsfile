@@ -14,7 +14,9 @@ pipeline {
     }
     stage('Docker_stage2') {
       steps {
-        sh 'npm install'
+        sh '''echo $USER
+echo "-----------------------------"
+npm install'''
       }
     }
   }
