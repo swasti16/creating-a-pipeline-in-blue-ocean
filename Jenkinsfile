@@ -16,7 +16,9 @@ pipeline {
       steps {
         sh '''echo $0
 echo $USER
-# echo "-----------------------------"
+cat /etc/shells
+echo $SHELL
+
 # npm install'''
       }
     }
