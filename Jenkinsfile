@@ -23,7 +23,7 @@ echo $0'''
       }
       steps {
         sh '''echo $NAME
-echo "Build2"'''
+echo $PWD'''
       }
     }
   }
