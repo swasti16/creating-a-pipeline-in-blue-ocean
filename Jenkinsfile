@@ -5,12 +5,13 @@ pipeline {
       parallel {
         stage('Build') {
           steps {
-            echo 'This is a minimal pipeline'
+            sh '''echo $USER
+echo $0'''
           }
         }
         stage('print 2') {
           steps {
-            echo 'Pipeline 2'
+            sh 'echo "In print 2"'
           }
         }
       }
