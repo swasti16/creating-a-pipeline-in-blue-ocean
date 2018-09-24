@@ -16,5 +16,15 @@ echo $0'''
         }
       }
     }
+    stage('Build2') {
+      agent any
+      environment {
+        NAME = 'Branch2_name'
+      }
+      steps {
+        sh '''echo $NAME
+echo "Build2"'''
+      }
+    }
   }
 }
